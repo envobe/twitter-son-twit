@@ -22,7 +22,7 @@
 	width: 0;
 	z-index: 1;
 	bottom: -15px;
-	left: 111px;
+	left: 110px;
 }
 </style>
 <?php
