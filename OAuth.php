@@ -40,7 +40,7 @@ class OAuthToken {
 
   /**
    * generates the basic string serialization of a token that a server
-   * would respond to request_token and access_token calls with
+   * would respond to request_token and access_token calls with.
    */
   function to_string() {
     return "oauth_token=" .
