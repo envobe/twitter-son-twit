@@ -29,14 +29,14 @@
 
 include_once('twitteroauth/twitteroauth.php');
 
-$twitter_customer_key           = 'zw3ZAa8dSh6AGuVQe0z75uvNS';
-$twitter_customer_secret        = 'IP92YHnj96fDWWrIsU6xyaaOKWQBWSp4EtzfT4y4oYCtWavAod';
-$twitter_access_token           = '24934210-rSYeB5BqlOGBtz2UnAKNTmwsAfkxVZ4t0DyU60YK2';
-$twitter_access_token_secret    = 'A5ZElBSdU7hyf06jm1e5DHbI3nLev5da4fmuPoQANViLt';
+$twitter_customer_key           = '';
+$twitter_customer_secret        = '';
+$twitter_access_token           = '';
+$twitter_access_token_secret    = '';
 
 $connection = new TwitterOAuth($twitter_customer_key, $twitter_customer_secret, $twitter_access_token, $twitter_access_token_secret);
 
-$my_tweets = $connection->get('statuses/user_timeline', array('screen_name' => 'envobe', 'count' => 1));
+$my_tweets = $connection->get('statuses/user_timeline', array('screen_name' => 'username?', 'count' => 1));
 
 echo '<div class="twitter-bubble">';
 if(isset($my_tweets->errors))
